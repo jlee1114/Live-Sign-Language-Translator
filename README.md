@@ -110,9 +110,9 @@ The first step was to apply *data augmentation* which waas done by using RandomR
 
 ### Network Architecture
 The outline of the network is as followed. 
-<p align="left" bgcolor="#800000">
+<p align="middle" bgcolor="#800000">
   <a href="https://github.com/justinrhee1114/Live-Sign-Language-Translator">
-    <img src="images/architecture.png" alt="Logo" width="960" height = "720">
+    <img src="images/architecture.png" alt="Logo" width="600" height = "450">
   </a>
 </p>
 
@@ -134,8 +134,8 @@ When I trained the model, the first epoch has a loss of 6.318 and by the final e
 0.00000018 which is great! 
 
 After this, we evaluate the model on the test set which gave me the following results:
-* Training Accuracy: 99.8% 
-* Validation Accuracy 96.9% 
+* **Training Accuracy: 99.8%** 
+* **Validation Accuracy 96.9%** 
 
 Since we gained great results, I converted the model to ONNX to use with OpenCV to make this into a live-detection with a camera. 
 
