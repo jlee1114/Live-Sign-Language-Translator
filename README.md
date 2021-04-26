@@ -34,19 +34,13 @@
     <li>
       <a href="#convolutional-neural-network">Convolutional Neural Network</a>
       <ul>
-        <li><a href="#image-processing">Image Processing</a></li>
-      </ul>
-      <ul>
-        <li><a href="#data-augmentation">Data Augmentation</a></li>
-      </ul>
-      <ul>
         <li><a href="#network-architecture">Network Architecture</a></li>
+      </ul>
+      <ul>
+        <li><a href="#parameters">Parameters</a></li>
       </ul>
     <li>
       <a href="#results">Results</a>
-      <ul>
-        <li><a href="#cnn-results">CNN Results</a></li>
-      </ul>
     </li>
     <li><a href="#summary">Summary</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -107,15 +101,38 @@ This dataset was taken from [Kaggle](https://www.kaggle.com/datamunge/sign-langu
 | Z (25) | n/a          | n/a      |
 
 ## Convolutional Neural Network
-For this project, I used PyTorch to create a neural network. The outline of the network is as followed. 
+For this project, I used PyTorch to create a neural network. This [tutorial](https://pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html) will help you if you're looking to build a model using PyTorch. 
+
+The first step was to apply *data augmentation* which waas done by using RandomResizedCrop to zoom into the pictures, then I normalized them to make them between (0,1). This was done in the *preprocessing* file and it outputted tensors, which is needed when you are using neural networks. 
+
+### Network Architecture
+The outline of the network is as followed. 
 <p align="left">
   <a href="https://github.com/justinrhee1114/Live-Sign-Language-Translator">
     <img src="images/ASL.png" alt="Logo" width="140" height="1100">
   </a>
 </p>
 
+### Parameters 
+After trying many different optimizers and loss functions, the best results were given and this is what it was: 
+* Loss Function: Cross Entropy Loss 
+* Optimizer: Stochastic Gradient Descent 
+  * Learning Rate = 0.01
+  * Momentum = 0.9 
+* Scheduler: StepLR
+  * Step Size = 10 
+  * Gamma = 0.1 
+* Epochs: 12
 
+## Results 
+When I trained the model, the first epoch has a loss of 6.318 and by the final epoch, the loss went down all the way to 
+0.00000018 which is great! 
 
+After this, we evaluate the model on the test set which gave me the following results:
+* Training Accuracy: 99.8% 
+* Validation Accuracy 96.9% 
+
+Since we gained great results, I converted the model to ONNX to use with OpenCV to make this into a live-detection with a camera. 
 
 ## Contact 
 
