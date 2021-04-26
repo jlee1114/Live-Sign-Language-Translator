@@ -110,9 +110,9 @@ The first step was to apply *data augmentation* which waas done by using RandomR
 
 ### Network Architecture
 The outline of the network is as followed. 
-<p align="left">
+<p align="left" bgcolor="#800000">
   <a href="https://github.com/justinrhee1114/Live-Sign-Language-Translator">
-    <img src="images/ASL.png" alt="Logo" width="140" height="1100">
+    <img src="images/architecture.png" alt="Logo" width="960" height = "720">
   </a>
 </p>
 
