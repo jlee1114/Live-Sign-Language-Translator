@@ -105,6 +105,9 @@ For this project, I used PyTorch to create a neural network. This [tutorial](htt
 
 The first step was to apply *data augmentation* which waas done by using RandomResizedCrop to zoom into the pictures, then I normalized them to make them between (0,1). This was done in the *preprocessing* file and it outputted tensors, which is needed when you are using neural networks. 
 
+<img src="images/amer_sign2.png" width="425"/> <img src="images/amer_sign3.png" width="425"/> 
+
+
 ### Network Architecture
 The outline of the network is as followed. 
 <p align="left">
@@ -114,6 +117,8 @@ The outline of the network is as followed.
 </p>
 
 ### Parameters 
+The main order for this neural network is: Forward -> Backward -> Optimize 
+
 After trying many different optimizers and loss functions, the best results were given and this is what it was: 
 * Loss Function: Cross Entropy Loss 
 * Optimizer: Stochastic Gradient Descent 
