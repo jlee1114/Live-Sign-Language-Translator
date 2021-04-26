@@ -139,6 +139,10 @@ After this, we evaluate the model on the test set which gave me the following re
 
 Since we gained great results, I converted the model to ONNX to use with OpenCV to make this into a live-detection with a camera. 
 
+<img src="images/H.png" width="185"/> <img src="images/E.png" width="185"/> <img src="images/L1.png" width="185"/> <img src="images/L2.png" width="185"/> <img src="images/O.png" width="185"/>
+
+
+
 ## Contact 
 
 Justin (Jin Wook) Lee  - justinjwlee1114@gmail.com
