@@ -74,6 +74,39 @@ This is why it is important and crucial that we have need something that could b
 * [OpenCV 4.0.1](https://opencv.org/)
 * [ONNX 1.9.0](https://onnx.ai/)
 
+## Dataset 
+This dataset was taken from [Kaggle](https://www.kaggle.com/datamunge/sign-language-mnist?select=sign_mnist_test). It contains a train folder and a test folder. Both these folder are patterend closely with the classic MNIST with a label between 0~25 with no cases for "J"(9) and "Z"(25) because they are gesture based. The train set has 27,445 cases and the test set has 7,172 cases. The CSV file contains 785 columns with the first being the label and the 784 being pixels(28x28). Both the datasets are balanced with very similar occurences of each letters. 
+
+| Label  | Training Set | Test Set |
+|--------|--------------|----------|
+| A (0)  | 1,126        | 331      |
+| B (1)  | 1,010        | 432      |
+| C (2)  | 1,144        | 310      |
+| D (3)  | 1,196        | 245      |
+| E (4)  | 957          | 498      |
+| F (5)  | 1,204        | 247      |
+| G (6)  | 1,090        | 348      |
+| H (7)  | 1,013        | 436      |
+| I (8)  | 1,162        | 288      |
+| J (9)  | n/a          | n/a      |
+| K (10) | 1,114        | 331      |
+| L (11) | 1,241        | 209      |
+| M (12) | 1,055        | 394      |
+| N (13) | 1,151        | 291      |
+| O (14) | 1,196        | 246      |
+| P (15) | 1,088        | 347      |
+| Q (16) | 1,279        | 164      |
+| R (17) | 1,294        | 144      |
+| S (18) | 1,199        | 246      |
+| T (19) | 1,186        | 248      |
+| U (20) | 1,161        | 266      |
+| V (21) | 1,082        | 346      |
+| W (22) | 1,225        | 206      |
+| X (23) | 1,164        | 267      |
+| Y (24) | 1,118        | 332      |
+| Z (25) | n/a          | n/a      |
+
+
 ## Contact 
 
 Justin (Jin Wook) Lee  - justinjwlee1114@gmail.com
