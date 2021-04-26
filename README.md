@@ -141,7 +141,7 @@ Since we gained great results, I converted the model to ONNX to use with OpenCV 
 After writing a script to start my inference session through OpenCV, I attached some pictures of the results. Here I spelled out "hello" using my application and took screenshots to show the results:
 
 
-<img src="images/H.png" width="185"/> <img src="images/E.png" width="185"/> <img src="images/L1.png" width="185"/> <img src="images/L2.png" width="185"/> <img src="images/O.png" width="185"/>
+<img src="images/H.png" width="180"/> <img src="images/E.png" width="180"/> <img src="images/L1.png" width="180"/> <img src="images/L2.png" width="180"/> <img src="images/O.png" width="180"/>
 
 Here is a reference picture to check/see how I did. 
 
