@@ -106,6 +106,16 @@ This dataset was taken from [Kaggle](https://www.kaggle.com/datamunge/sign-langu
 | Y (24) | 1,118        | 332      |
 | Z (25) | n/a          | n/a      |
 
+## Convolutional Neural Network
+For this project, I used PyTorch to create a neural network. The outline of the network is as followed. 
+<p align="left">
+  <a href="https://github.com/justinrhee1114/Live-Sign-Language-Translator">
+    <img src="images/ASL.png" alt="Logo" width="140" height="1100">
+  </a>
+</p>
+
+
+
 
 ## Contact 
 
