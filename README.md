@@ -138,9 +138,14 @@ After this, we evaluate the model on the test set which gave me the following re
 * **Validation Accuracy 96.9%** 
 
 Since we gained great results, I converted the model to ONNX to use with OpenCV to make this into a live-detection with a camera. 
+After writing a script to start my inference session through OpenCV, I attached some pictures of the results. Here I spelled out "hello" using my application and took screenshots to show the results:
+
 
 <img src="images/H.png" width="185"/> <img src="images/E.png" width="185"/> <img src="images/L1.png" width="185"/> <img src="images/L2.png" width="185"/> <img src="images/O.png" width="185"/>
 
+Here is a reference picture to check/see how I did. 
+
+<img src="images/hello.png" width="600" height="200"/>
 
 
 ## Contact 
