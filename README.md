@@ -133,6 +133,11 @@ After trying many different optimizers and loss functions, the best results were
 When I trained the model, the first epoch has a loss of 6.318 and by the final epoch, the loss went down all the way to 
 0.00000018 which is great! 
 
+Here are the accuracy results per letter:
+| Class       | A     | B    | C    | D    | E    | F    | G    | H    | I    | K    | L    | M    | N    | O    | P     | Q    | R    | S    | T    | U    | V    | W     | X    | Y    |
+|-------------|-------|------|------|------|------|------|------|------|------|------|------|------|------|------|-------|------|------|------|------|------|------|-------|------|------|
+| Accuracy(%) | 100.0 | 99.1 | 98.4 | 99.2 | 99.8 | 99.6 | 94.3 | 95.4 | 98.3 | 98.5 | 99.5 | 94.9 | 94.5 | 98.8 | 100.0 | 98.8 | 97.2 | 92.7 | 77.0 | 95.5 | 97.1 | 100.0 | 98.9 | 95.8 |
+
 After this, we evaluate the model on the test set which gave me the following results:
 * **Training Accuracy: 99.8%** 
 * **Validation Accuracy 96.9%** 
