@@ -29,7 +29,7 @@ def main():
         index = np.argmax(y, axis = 1)
         label = labs[int(index)]
 
-        cv2.putText(frame, label, (100,100), cv2.FONT_HERSHEY_SIMPLEX, 2.0, (0, 255, 0), thickness = 2)
+        cv2.putText(frame, label, (350,100), cv2.FONT_HERSHEY_SIMPLEX, 2.0, (0, 0, 0), thickness = 4)
         cv2.imshow('Live Sign Language Translator', frame)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):

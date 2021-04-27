@@ -62,5 +62,6 @@ def train_test_loaders(batch_size=32):
     return train_load, test_load   
 
 if __name__ == '__main__':
+    #Testing out 4 cases 
     train_load, test_load = train_test_loaders(4)
     print(next(iter(train_load)))
