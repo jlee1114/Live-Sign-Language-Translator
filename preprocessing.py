@@ -42,6 +42,7 @@ class Preprocess(Dataset):
         '''
         we normalize the pictures here so it ensures that each input parameter (pixel, in this case) 
         has a similar data distribution. This makes convergence faster while training the network.
+        https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html 
         '''
         transform = transforms.Compose([
             transforms.ToPILImage(),
@@ -61,5 +62,5 @@ def train_test_loaders(batch_size=32):
     return train_load, test_load   
 
 if __name__ == '__main__':
-    train_load, test_load = train_test_loaders(2)
+    train_load, test_load = train_test_loaders(4)
     print(next(iter(train_load)))

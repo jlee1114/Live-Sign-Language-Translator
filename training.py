@@ -10,7 +10,9 @@ import torch
 
 '''
 Visit this link to see how I built my pytorch neural net! It's an amazing tutorial.
-https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html 
+https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html
+This is a more specific one to my case 
+https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html 
 '''
 class Model(nn.Module):
     def __init__(self):
@@ -45,8 +47,11 @@ class Model(nn.Module):
 def train(net, criterion, optimizer, trainloader, epoch):
     loss = 0.0
     for i, data in enumerate(trainloader, 0):
+        #Convert the dataframe to tensor not str
         inputs = Variable(data['image'].float())
         labels = Variable(data['label'].long())
+
+        # Zero the parameter gradients 
         optimizer.zero_grad()
 
         # forward + backward + optimize
@@ -59,7 +64,8 @@ def train(net, criterion, optimizer, trainloader, epoch):
         loss += loss.item()
         if i % 100 == 0:
             print('epoch: {} ============ loss: {}'.format(epoch, loss / (i+1)))
-        
+    print("Finished Training Current Epoch")
+
 def main():
     '''
     Initializing the network. Takes in the model as a float then applies the loss function,
