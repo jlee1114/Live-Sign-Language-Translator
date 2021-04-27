@@ -12,7 +12,7 @@
     <img src="images/asl-american-sign-language.png" alt="Logo" width="500" height="320">
   </a>
   <p align="center">
-    Training a convolutional neural network with PyTorch and a live implementation of detecting which sign language is being shown with openCV 
+    Training a convolutional neural network with PyTorch and a live implementation of detecting which sign language alphabet is being shown with openCV 
     
   </p>
 </p>
