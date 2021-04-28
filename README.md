@@ -42,7 +42,7 @@
     <li>
       <a href="#results">Results</a>
     </li>
-    <li><a href="#summary">Summary</a></li>
+    <li><a href="#running-the-model">Running the model</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -141,6 +141,10 @@ Here are the accuracy results per letter:
 After this, we evaluate the model on the test set which gave me the following results:
 * **Training Accuracy: 99.8%** 
 * **Validation Accuracy 96.9%** 
+
+## Running the Model
+
+If you want to run this model, fork the whole file and make sure you have the required packages that I have stated above in the *Built-with* section. No ned to run anything else besides the application.py file. Press 'Q' to exit the program when you are done. 
 
 Since we gained great results, I converted the model to ONNX to use with OpenCV to make this into a live-detection with a camera. 
 After writing a script to start my inference session through OpenCV, I attached some pictures of the results. Here I spelled out "hello" using my application and took screenshots to show the results:
